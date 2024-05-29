@@ -33,5 +33,5 @@ void SSI2_Transfer(INT16U data) {
 
         while((SSI2_SR_R & 2) == 0); // Bit 1 is the TNF (Transmit FIFO Not Full) flag
         SSI2_DR_R = data;
-
+    
 }
